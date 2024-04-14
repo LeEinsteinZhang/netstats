@@ -5,8 +5,8 @@ import numpy as np
 import os
 from datetime import datetime, timedelta
 
-pass_few_hours = 6
-log = 0
+pass_few_hours = 12
+log = False
 
 # Change the path to your directory
 directory_path = '/home/lez/ping_result'
@@ -39,7 +39,7 @@ for filename in sorted_files:
             graph_date.append(n)
             if latency == 'NULL':
                 loss += 1
-                graph_latency.append('')
+                graph_latency.append(log)
             else:
                 latency = float(latency)
                 sum += latency
