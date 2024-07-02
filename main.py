@@ -5,7 +5,7 @@ import numpy as np
 import os
 from datetime import datetime, timedelta
 
-pass_few_hours = 12
+pass_few_hours = 24
 log = False
 
 # Change the path to your directory
